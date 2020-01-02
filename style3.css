@@ -1,0 +1,103 @@
+header {
+    display: flex;
+    background-color: rgb(53, 66, 107);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+        0px 36px, 4px 2px, 29px 6px, 33px 30px;
+    background-image:
+        linear-gradient(335deg, rgb(100, 62, 122) 23px, transparent 23px),
+        linear-gradient(155deg, rgb(100, 62, 122) 23px, transparent 23px),
+        linear-gradient(335deg, rgb(100, 62, 122) 23px, transparent 23px),
+        linear-gradient(155deg, rgb(100, 62, 122) 23px, transparent 23px),
+
+        linear-gradient(335deg, rgb(100, 62, 122) 10px, transparent 10px),
+        linear-gradient(155deg, rgb(100, 62, 122) 10px, transparent 10px),
+        linear-gradient(335deg, rgb(100, 62, 122) 10px, transparent 10px),
+        linear-gradient(155deg, rgb(100, 62, 122) 10px, transparent 10px);
+    height: 4.5em;
+    padding: 1rem;
+    justify-content: flex-end;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: 'Poiret One', cursive;
+    color: rgb(19, 19, 19);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #eee8aa;
+}
+
+.logo {
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 2.4em;
+    flex-grow: 2;
+    height: 6vh;
+}
+
+.icon {
+    padding-right: 3vw;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+li {
+    margin-top: .7em;
+    display: inline-block;
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+
+p {
+    position: relative;
+}
+section p {
+    font-size: 2vw;
+}
+h3 {
+    font-size: 5vw; 
+    color: goldenrod;
+    padding-top: 2vh;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    padding-top: 1vh;
+}
+.content{
+    display: flex;
+    padding-top: 2vh;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+img {
+    width: 60vw;
+}
+h2 {
+    color: rgb(121, 40, 158);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vh;
+    font-size: 6vw;
+}

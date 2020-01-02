@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>We Feast</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+<!-- Hier zet ik mijn header, met een simpele logo gemaakt van tekst -->
+<header>
+        <div class="logo">
+            <a href="index.html"> F E </a>
+        </div>
+<!-- Maak hier een UL aan met een list item -->
+            <ul>
+                <li class="icon">
+                    <a href="form.html">
+                    <p>Reserve</p>
+                    </a>
+                </li>
+            </ul>
+</header>
+
+<body>
+<!-- Heb dit kunnen met maken door dit tutorial: https://youtu.be/Xy3GlrddZFI -->
+
+<!-- Maak hier eerst een container aan -->
+    <section class="video container">
+<!-- Hierin zit de video zelf, met atributes zoals autoplay en loop zodat het blijft loopen -->
+        <div class="video-wrap">
+            <video src="video.mp4" autoplay="true" loop="true" muted></video>
+        </div>
+<!-- Een div voor styling, overlay wordt gebruikt om een zwart achtergrond te geven aan de video -->
+        <div class="video-overlay"></div>
+        <div class="video-content"></div>
+        <h1> WE FEAST </h1>
+    </section>
+
+<!-- Maak hier het hamburg menu aan en een sectie voor "Weekly Specials" -->
+
+    <section class="specials">
+        <svg version="1.1" id="hamburger" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+            <line class="st0" x1="2.74" y1="8.45" x2="45.05" y2="8.45"/>
+            <line class="st0" x1="2.74" y1="24" x2="45.05" y2="24"/>
+            <line class="st0" x1="2.74" y1="39.55" x2="45.05" y2="39.55"/>
+        </svg>
+         <p>Weekly Specials</p>
+    </section>
+
+<!-- Wanneer je op het hamburg menu klikt krijg je een lijst van filter opties te zien die allemaal svg'tjes zijn -->
+
+    <aside class="toggle-menu">
+        <ul>
+            <li><a href="burger.html"><img src="hamborger.svg"></a></li>
+            <li><a href="sushi.html"><img src="sushi.svg"></a></li>
+            <li><a href="pizza.html"><img src="pizza.svg"></a></li>
+            <li><a href="steak.html"><img src="steak.svg"></a></li>
+            <li><a href="taco.html"><img src="taco.svg"></a></li>
+            <li><a href="hotdog.html"><img src="hotdog.svg" class="hotdog"></a></li>
+        </ul>
+    </aside>
+
+<!-- De gerechten heb ik hier allemaal neergezet samen met de behorende tekst en link -->
+
+    <article class="items">
+        <div class="item1"> <a href="hotdog-page.html"> <img src="hotdog.jpg"> <h2>Hotdog</h2> <p> Delicous freshly made hotdogs with local produce</p> </a></div>
+        <div class="item2"> <a href="sushi-page.html"> <img src="sushi.jpg"> <h2>Sushi</h2> <p> Delicous freshly made sushi with local produce</p> </a></div>
+        <div class="item3"> <a href="burger-page.html"> <img src="burger.jpg"> <h2>Burger</h2> <p> Delicous freshly made burger with local produce</p> </a></div>
+    </article>
+
+<!-- Twee aparte secties gemaakt van de gerechten zodat ze uiteindelijk onder elkaar staan tijdens het stylen -->
+
+    <article class="items">
+            <div class="item1"> <a href="taco-page.html"> <img src="taco.jpg"> <h2>Taco</h2> <p> Delicous freshly made taco with local produce</p> </a></div>
+            <div class="item2"> <a href="steak-page.html"> <img src="steak.jpg"> <h2>Steak</h2> <p> Delicous freshly made steak with local produce</p> </a></div>
+            <div class="item3"> <a href="pizza-page.html"> <img src="pizza.jpg"> <h2>Pizza</h2> <p> Delicous freshly made pizza with local produce</p> </a></div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+body {
+    background-color: rgb(236, 236, 236);
+    font-family: 'Poiret One', cursive;
+    color: white;
+/* hiermee voorkom ik dat je naar rechts kan scrollen; wat niet de bedoeling is */
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    background-color: rgb(53, 66, 107);
+/* Source https://leaverou.github.io/css3patterns/#steps*/
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+        0px 36px, 4px 2px, 29px 6px, 33px 30px;
+    background-image:
+        linear-gradient(335deg, rgb(100, 62, 122) 23px, transparent 23px),
+        linear-gradient(155deg, rgb(100, 62, 122) 23px, transparent 23px),
+        linear-gradient(335deg, rgb(100, 62, 122) 23px, transparent 23px),
+        linear-gradient(155deg, rgb(100, 62, 122) 23px, transparent 23px),
+
+        linear-gradient(335deg, rgb(100, 62, 122) 10px, transparent 10px),
+        linear-gradient(155deg, rgb(100, 62, 122) 10px, transparent 10px),
+        linear-gradient(335deg, rgb(100, 62, 122) 10px, transparent 10px),
+        linear-gradient(155deg, rgb(100, 62, 122) 10px, transparent 10px);
+    height: 4.5em;
+    padding: 1rem;
+/* Position fixed houdt de header op positie*/
+    position: fixed;
+/* Met dit behoudt de header altijd de volle breedte van de viewport*/
+    width: 100vw;
+    top: 0;
+/* Met z-index hou ik mijn header boven de zwarte overlay van de video*/
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #eee8aa;
+}
+
+.logo {
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 2.4em;
+/* Maak hier ruimte tussen de logo en 'reserveren' */
+    flex-grow: 2;
+    height: 6vh;
+}
+
+.icon {
+    padding-right: 3vw;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+li {
+    margin-top: .7em;
+    display: inline-block;
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+
+p {
+    position: relative;
+}
+
+.video {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+.video-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-wrap {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-overlay {
+    height: 92.8vh;
+    width: 100vw;
+    position: absolute;
+    top: 7.2vh;
+    left: 0;
+    background: rgb(41, 41, 41);
+    z-index: 1;
+    opacity: 0.8;
+}
+
+h1 {
+    position: absolute;
+    left: 29%;
+    top: 40%;
+    z-index: 1;
+    font-size: 10vw;
+    color: palegoldenrod;
+    text-shadow: 0.5vw 0vw rgb(114, 90, 53);
+    transition: all 2s ease-in-out;
+}
+h1:hover {
+    transform: scale(1.2, 1.2);
+    color: rgb(206, 195, 102);
+    text-shadow: 0.5vw 0vw rgb(63, 49, 29);
+    cursor: pointer;
+}
+
+/* Hier style ik de sectie over "weekly specials" */
+.specials {
+    text-align: center;
+    font-size: 3em;
+    background-color: rgb(79, 97, 158);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 33px 6px,
+        0px 36px, 4px 2px, 29px 6px, 33px 30px;
+    background-image:
+        linear-gradient(335deg, rgb(149, 93, 182) 23px, transparent 23px),
+        linear-gradient(155deg, rgb(149, 93, 182) 23px, transparent 23px),
+        linear-gradient(335deg, rgb(149, 93, 182) 23px, transparent 23px),
+        linear-gradient(155deg, rgb(149, 93, 182) 23px, transparent 23px),
+
+        linear-gradient(335deg, rgb(149, 93, 182) 10px, transparent 10px),
+        linear-gradient(155deg, rgb(149, 93, 182) 10px, transparent 10px),
+        linear-gradient(335deg, rgb(149, 93, 182) 10px, transparent 10px),
+        linear-gradient(155deg, rgb(149, 93, 182) 10px, transparent 10px);
+    padding-bottom: .2em;
+    display: flex;
+}
+
+.specials p {
+    flex-grow: 2;
+    transition: all 1s ease-in-out;
+}
+.specials p:hover {
+    color: rgb(231, 190, 76);
+    cursor: pointer;
+}
+/* Dit is voor het hamburg menu icon*/
+
+.st0 {
+        fill:none;
+        stroke:#FFFFFF;
+        stroke-width:3;
+        stroke-miterlimit:10;
+}
+
+.specials svg{
+    padding-left: 0.3em;
+    width: 50px;
+    justify-content: flex-start;
+    transition: all 0.5s ease-in-out;
+}
+.specials svg line {
+    transition: all 0.5s ease-in-out;
+}
+.specials svg:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+.specials svg:hover line {
+    stroke: rgb(231, 190, 76);
+}
+/* Ik geef de hamburger menu display:none, wanneer je op het hamburg menu klikt verandert dit naar block door javascript */
+.toggle-menu {
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.4s ease-in-out, height 1s ease-in-out;
+}
+.toggle-menu-test {
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 4em;
+    opacity: 1;
+}
+.toggle-menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.toggle-menu li{
+    width: 40px;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+}
+/* Wanneer je hovert op een van de kleine icon'tjes, gaan ze 20 graden draaien*/
+.toggle-menu li:hover {
+    transform: rotate(20deg);
+    filter: invert(0.4) sepia(1) saturate(2.8) hue-rotate(360deg) brightness(0.71);
+}
+.hotdog {
+    width: 40px;
+}
+/* Hier style ik de verschillende menu items*/
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: black;
+    padding-bottom: 1em;
+
+}
+/* Wanneer je hovert op een van de menu items, gaan ze een klein beetje vergroten*/
+.items :hover{
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.01, 1.01);
+}
+
+.items img {
+    width: 32.5vw;
+    height: 38vh;
+    padding-top: 1em;
+}
+
+.items h2 {
+    position: relative;
+    font-size: 1.7em;
+    text-align: center;
+    color: rgb(190, 150, 62);
+}
+
+.items p {
+    text-align: center;
+    margin-bottom: 1em;
+    color: indigo;
+}
+
+.item1 {
+    background-color: rgb(229, 226, 226);
+}
+
+.item2 {
+    background-color: rgb(236, 236, 236);
+}
+
+.item3 {
+    background-color: rgb(229, 226, 226);
+}
+/* media query toegevoegd voor wanneer je op een screen size van 600px width zit, dan verandert de flex direction van horizontaal naar verticaal */
+@media screen and (max-width: 600px) {
+    .items {
+        flex-direction: column;
+    }
+
+    .items img {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .items {
+        flex-grow: 2;
+    }
+}
